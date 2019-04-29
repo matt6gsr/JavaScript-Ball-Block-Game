@@ -1,6 +1,4 @@
 /////// LOAD IMAGES ////////
-
-// LOAD BG IMAGE
 const BG_IMAGE = new Image();
 BG_IMAGE.src = 'img/bg.jpg';
 
@@ -12,10 +10,6 @@ LIFE_IMAGE.src = 'img/life.png';
 
 const SCORE_IMAGE = new Image();
 SCORE_IMAGE.src = 'img/score.png';
-
-/////// END LOAD IMAGES ////////
-
-// ************************ //
 
 /////// LOAD SOUNDS ////////
 const WALL_HIT = new Audio();
@@ -38,4 +32,3 @@ LEVEL_UP.src = 'sounds/level_up.mp3';
 
 const GAME_OVER_SOUND = new Audio();
 GAME_OVER_SOUND.src = 'sounds/game_over.wav';
-/////// END LOAD SOUNDS ////////
