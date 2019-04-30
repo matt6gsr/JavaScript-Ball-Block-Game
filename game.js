@@ -21,6 +21,7 @@ let leftArrow = false;
 let rightArrow = false;
 let LEVEL = 1;
 let GAME_OVER = false;
+let bricks = [];
 
 //CREATE THE PADDLE
 const paddle = {
@@ -99,8 +100,6 @@ const brick = {
   fillColour: '#2e3548',
   strokeColour: '#FFF'
 };
-
-let bricks = [];
 
 const createBricks = () => {
   for (let r = 0; r < brick.row; r++) {
@@ -317,6 +316,8 @@ const audioManager = () => {
   BRICK_HIT.muted = BRICK_HIT.muted ? false : true;
   WIN.muted = WIN.muted ? false : true;
   LIFE_LOST.muted = LIFE_LOST.muted ? false : true;
+  LEVEL_UP.muted = LEVEL_UP.muted ? false : true;
+  GAME_OVER_SOUND.muted = GAME_OVER_SOUND.muted ? false : true;
 };
 
 soundElement.addEventListener('click', audioManager);

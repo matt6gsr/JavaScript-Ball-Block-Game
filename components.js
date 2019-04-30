@@ -1,6 +1,7 @@
 /////// LOAD IMAGES ////////
 const BG_IMAGE = new Image();
-BG_IMAGE.src = 'img/bg.jpg';
+BG_IMAGE.src = 'img/bg1.jpg';
+//BG_IMAGE.src = `img/bg${LEVEL}.jpg`;
 
 const LEVEL_IMAGE = new Image();
 LEVEL_IMAGE.src = 'img/level.png';
