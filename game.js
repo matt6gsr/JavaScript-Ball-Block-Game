@@ -1,7 +1,3 @@
-////////////////////////////////////////////
-//* BreakOut JavaScript - Code Explained *//
-////////////////////////////////////////////
-
 //SELECT CANVAS ELEMENT
 const cvs = document.getElementById('breakout');
 const ctx = cvs.getContext('2d');
@@ -243,6 +239,7 @@ const ballPaddleCollision = () => {
 //GAME OVER
 const gameOver = () => {
   if (LIFE <= 0) {
+    showYouLose();
     GAME_OVER = true;
   }
 };
@@ -258,6 +255,7 @@ const levelUp = () => {
   }
   if (isLevelDone) {
     if (LEVEL >= MAX_LEVEL) {
+      showYouWin();
       WIN.play();
       GAME_OVER = true;
       return;
@@ -312,6 +310,35 @@ const audioManager = () => {
     imgSrc == 'img/SOUND_ON.png' ? 'img/SOUND_OFF.png' : 'img/SOUND_ON.png';
 
   soundElement.setAttribute('src', SOUND_IMG);
+
+  //MUTE/UNMUTE SOUNDS
+  WALL_HIT.muted = WALL_HIT.muted ? false : true;
+  PADDLE_HIT.muted = PADDLE_HIT.muted ? false : true;
+  BRICK_HIT.muted = BRICK_HIT.muted ? false : true;
+  WIN.muted = WIN.muted ? false : true;
+  LIFE_LOST.muted = LIFE_LOST.muted ? false : true;
 };
 
 soundElement.addEventListener('click', audioManager);
+
+//SHOW GAME OVER MESSAGE
+/*SELECT ELEMENTS*/
+const gameover = document.getElementById('gameover');
+const youwon = document.getElementById('youwon');
+const youlose = document.getElementById('youlose');
+const restart = document.getElementById('restart');
+
+//CLICK ON PLAY AGAIN BUTTON
+restart.addEventListener('click', () => location.reload()); //reload the page
+
+//SHOW YOU WIN
+const showYouWin = () => {
+  gameover.style.display = 'block';
+  youwon.style.display = 'block';
+};
+
+//SHOW YOU LOSE
+const showYouLose = () => {
+  gameover.style.display = 'block';
+  youlose.style.display = 'block';
+};

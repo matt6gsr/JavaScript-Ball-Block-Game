@@ -1,32 +1,28 @@
-<!-- //////////////////////////////////////////// -->
-<!-- //* BreakOut JavaScript - Code Explained *// -->
-<!-- //////////////////////////////////////////// -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>2D Breakout Game - JavaScript</title>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Germania+One">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2D Breakout Game - JavaScript</title>
+    <link href="http://fonts.googleapis.com/css?family=Germania+One", rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
 
-  <style>
-    #sound{
-     width: 30px;
-     height: 30px;
-     cursor: pointer;
-     position: absolute;
-     top: 465px;
-     left: 15px; 
-    }
-  </style>
-</head>
-<body>
-<div class="sound">
-  <img src="img/SOUND_ON.png" alt="" id="sound">
-</div>
+  <body>
+    <div class="game">
+      <div class="sound">
+        <img src="img/SOUND_ON.png" alt="" id="sound" />
+      </div>
 
-  <canvas id="breakout" width="400" height="500"></canvas>
+      <div id="gameover">
+        <div id="restart">Click Here To Play Again!</div>
+        <img src="img/youwon.png" alt="" id="youwon" />
+        <img src="img/gameover.png" alt="" id="youlose" />
+      </div>
 
-  <script src="components.js"></script>
-  <script src="game.js"></script>
-</body>
+      <canvas id="breakout" width="400" height="500"></canvas>
+    </div>
+
+    <script src="components.js"></script>
+    <script src="game.js"></script>
+  </body>
 </html>
