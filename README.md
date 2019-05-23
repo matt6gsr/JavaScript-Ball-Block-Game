@@ -8,7 +8,7 @@ To play the move the paddle, use the LEFT and RIGHT keys on the keypad, the ball
 
 To play the game via the internet please visit the link below:
 
-- [JavaScript-Ball-Block-Game](www.javascript-ball-block-game.surge.sh)
+- [JavaScript-Ball-Block-Game](https://javascript-ball-block-game.surge.sh)
 
 To play the game locally, clone the repo address and using the terminal window run the command:
 
