@@ -2,47 +2,20 @@
 
 I followed a tutorial on how to make this game to teach myself how to write a game using JavaScript. Having never built a anything like this before I was interested in the whole proccess. I tried putting my own stamp on the project by refactoring where possible and adding small features and additional sounds.
 
-To play the move the paddle, use the LEFT and RIGHT keys on the keypad, the ball will start automatically.
+To play the move the paddle, use the LEFT and RIGHT keys on the keypad, the ball will start automatically. The rows of blocks increase with each level along with the speed of the ball. The game is over when either you lose all 3 lives or you reach the end break all the bricks on level 5. Good luck!
 
 ## Getting Started
 
-To explore this project locally, clone the repo address and using the terminal window run the command:
+To play the game locally, clone the repo address and using the terminal window run the command:
 
 ```
 git clone https://github.com/matt6gsr/JavaScript-Ball-Block-Game.git
 ```
 
-Node.js is required to run the development instance. To check node is installed on your machine, in the terminal run the command:
+Navigate to this repo/folder via your file explorer. Inside the folder, double click the file:
 
 ```
-node -v
+index.js
 ```
 
-If Node.js is not installed on your machine, please visit the link below for installation instructions
-
-[Node.js](https://nodejs.org/en/download/)
-
-CD into this repo/folder:
-
-```
-cd JavaScript-Ball-Block-Game
-```
-
-To install the required dependencies, run the command:
-
-```
-npm install
-```
-
-To start having fun, run the instance locally by executing the command:
-
-```
-npm run start
-```
-
-This will start the game running on localhost, port 3000 for you to play in your browser.
-
-## Links
-
-- [Node](https://nodejs.org/en/)
-- [npm](https://www.npmjs.com/)
+This will open your web browser and start the game.

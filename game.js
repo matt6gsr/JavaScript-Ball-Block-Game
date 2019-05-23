@@ -126,6 +126,7 @@ const drawBricks = () => {
       let b = bricks[r][c];
       //IF BRICK ISN'T BROKEN
       if (b.status) {
+        gameOver;
         ctx.fillStyle = brick.fillColour;
         ctx.fillRect(b.x, b.y, brick.width, brick.height);
         ctx.strokeStyle = brick.strokeColour;
